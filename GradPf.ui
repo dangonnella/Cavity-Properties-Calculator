@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>332</width>
+    <height>492</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>Q0</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QLineEdit" name="pf_edit"/>
+   </item>
+   <item row="3" column="1">
+    <widget class="QLineEdit" name="eacc_edit"/>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Qext</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="2">
+    <widget class="QLabel" name="label_8">
+     <property name="text">
+      <string>W</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="2">
+    <widget class="QLabel" name="label_7">
+     <property name="text">
+      <string>MV/m</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="3">
+    <widget class="QPushButton" name="compute_button">
+     <property name="text">
+      <string>Compute</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3" rowspan="2">
+    <layout class="QVBoxLayout" name="verticalLayout_14">
+     <item>
+      <widget class="QRadioButton" name="eacc_radio">
+       <property name="text">
+        <string>Eacc</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">compute_group</string>
+       </attribute>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="pf_radio">
+       <property name="text">
+        <string>Pf</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">compute_group</string>
+       </attribute>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="1">
+    <widget class="QLineEdit" name="q0_edit"/>
+   </item>
+   <item row="0" column="1">
+    <widget class="QLineEdit" name="qext_edit"/>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>Pf</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2">
+    <widget class="QLabel" name="label_6">
+     <property name="text">
+      <string>W</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QLineEdit" name="pdiss_edit"/>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>Eacc</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>Pdiss</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="3">
+    <layout class="QVBoxLayout" name="verticalLayout_13">
+     <item>
+      <widget class="QRadioButton" name="onepthree_radio">
+       <property name="text">
+        <string>1.3 GHz</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">frequency_group</string>
+       </attribute>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="threepnine_radio">
+       <property name="text">
+        <string>3.9 GHz</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">frequency_group</string>
+       </attribute>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="compute_group"/>
+  <buttongroup name="frequency_group"/>
+ </buttongroups>
+</ui>
